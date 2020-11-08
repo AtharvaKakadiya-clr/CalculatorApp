@@ -285,7 +285,7 @@ button:hover {
       $(function () {
         let i = 0;
         var socket = io();
-        $('#equals').delay( 800 ).click(function(){
+        $('form').delay( 800 ).submit(function(){
           socket.emit('chat message', calculator.final,);
           $('#m').val('');
           return false;
